@@ -1,0 +1,122 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background-color: #f2ebe3;
+  align-items: center;
+}
+.main {
+  display: block;
+  align-items: center;
+  width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: none;
+}
+.product {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color: white;
+}
+
+.product picture img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.pdtData h4 {
+  letter-spacing: 4px;
+  color: #6c7289;
+  font-size: 12px;
+}
+.pdtData h1 {
+  font-size: 28px;
+  margin: 15px 0;
+  line-height: 1.1;
+}
+
+.description {
+  color: #6c7289;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.priceSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+.price {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #3c8067;
+}
+.oldprice {
+  text-decoration: line-through;
+  color: #6c7289;
+  font-size: 14px;
+  position: static;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #3c8067;
+  color: white;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 5px;
+  width: 90%;
+}
+.cart {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+button:hover {
+  background-color: #1a4031;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    height: auto;
+  }
+  .main {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .product {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .productImg {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .pdtData {
+    padding: 5px;
+  }
+  .pdtData h1 {
+    font-size: 26px;
+  }
+
+  .description {
+    margin: 10px 0;
+  }
+}
